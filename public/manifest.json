@@ -1,0 +1,12 @@
+{
+  "short_name": "Unicorn",
+  "name": "Unicorn Studios",
+  "icons": [{
+    "src": "/images/logos/corn_icon.png",
+    "type": "image/png"
+  }],
+  "display": "standalone",
+  "background_color": "black",
+  "theme_color": "green",
+  "start_url": "/"
+}
