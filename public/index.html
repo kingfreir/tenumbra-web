@@ -34,46 +34,48 @@
 
 		<title>Tenumbra</title>
 	</head>
-	<body class="bg-dark">
+	<body class="bg-dark" data-spy="scroll" data-target="#navbar" data-offset="90">
 		<!--NAVBAR SECTION-->
-		<nav class="navbar navbar-expand-lg navbar-dark justify-content-between">
-			<a class="navbar-brand" href="#">Tenumbra</a>
+		<nav id="navbar" class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark justify-content-between">
+			<a class="navbar-brand" href="#">
+					<img height="50" src="images/logos/logo_unicorn_studios_negative.png">
+			</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
 			<div class="collapse navbar-collapse justify-content-end" id="navbarNav">
 				<div class="navbar-nav">
-					<li class="nav-item active">
-						<a class="nav-link" href="#">About <span class="sr-only">(current)</span></a>
+					<li class="nav-item">
+						<a class="nav-link" href="#about">About <span class="sr-only">(current)</span></a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">Team</a>
+						<a class="nav-link" href="#team">Team</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">Board</a>
+						<a class="nav-link" href="#board">Board</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">Digital</a>
+						<a class="nav-link" href="#digital">Digital</a>
 					</li>
 				</div>
 			</div>
 		</nav>
 
 		<!--HEADER SECTION-->
-		<div class="container">
+		<div class="container bg-light" style="height: 256px;">
 
 		</div>
 
 		<!--ABOUT SECTION-->
-		<div class="container bg-dark mb-5 pb-5">
-			<h2 class="text-uppercase text-light">About</h2>
+		<div id="about" class="container bg-dark mb-5" style="padding-top: 90px">
+			<h2 class="text-uppercase text-light text-center">About</h2>
 			<p class="text-justify text-light">This is a simple About section.</p>
 		</div>
 
 		<!--TEAM SECTION-->
-		<div class="container bg-light" style="transform: skew(0, 5deg); padding-top: 20px; padding-bottom: 50px; z-index: 2;">
+		<div class="container bg-light shadow-lg" style="transform: skew(0, 5deg); padding-top: 20px; padding-bottom: 50px; z-index: 2;">
 			<div style="transform: skew(0,-5deg);padding-bottom: 100px;">
-			<h2 class="text-uppercase">Team</h2>
+			<h2 id="team" class="text-uppercase text-center" style="padding-top: 90px">Team</h2>
 			<div class="d-flex flex-row flex-wrap justify-content-around">
 				<div class"card" style="width: 8rem">
 						<img src="images/team/alexandra_bw.png" height="128" class="card-img-top w-100">
@@ -137,9 +139,9 @@
 
 		<!--BOARD SECTION-->
 		<div style="margin-top: -100px;">
-			<div class="container bg-success" style="transform: skew(0, -5deg); padding-top: 50px; padding-bottom: 50px; z-index: 3;">
+			<div id="board" class="container bg-success shadow-lg" style="transform: skew(0, -5deg); padding-top: 50px; padding-bottom: 50px; z-index: 3;">
 				<div style="transform: skew(0,5deg);padding-bottom: 100px">
-					<h2 class="text-uppercase">Board Game</h2>
+					<h2 class="text-uppercase text-center">Board Game</h2>
 					<p class="text-justify">This is the Board Game section.</p>
 				</div>
 			</div>
@@ -147,14 +149,13 @@
 
 		<!--DIGITAL SECTION-->
 		<div style="margin-top: -100px">
-			<div class="container bg-dark" style="transform: skew(0, 5deg); padding-top: 20px; z-index: 4;">
+			<div id="digital" class="container bg-dark" style="transform: skew(0, 5deg); padding-top: 20px; z-index: 4;">
 				<div style="transform: skew(0,-5deg); padding-bottom: 100px;">
-					<h2 class="text-uppercase text-light">Digital Game</h2>
+					<h2 class="text-uppercase text-light text-center">Digital Game</h2>
 					<p class="text-justify text-light">This is the Digital Game section.</p>
 				</div>
 			</div>
 		</div>
-
 		<!--SCRIPTS-->
 		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
