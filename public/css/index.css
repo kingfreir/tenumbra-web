@@ -2,13 +2,6 @@ iframe {
   overflow: hidden
 }
 
-.header-img {
-  position: absolute;
-  margin: auto;
-  top: 0;
-  left: 0;
-  right: 0;
-}
 .skew-10 {
   transform: skewY(10deg)
 }
@@ -69,10 +62,31 @@ iframe {
 
 .layer {
   background-position: bottom center;
-  background-size: auto;
+  background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
-  height: 800px;
+  height: 100%;
   position: fixed;
   z-index: -1;
+}
+
+.anchor{
+  display: block;
+  height: 115px; /*same height as header*/
+  margin-top: -115px; /*same height as header*/
+  visibility: hidden;
+}
+
+@font-face {
+  font-family: Futura Round Bold;
+  src: url(../fonts/Futura\ Round\ Bold.ttf);
+}
+
+@font-face {
+  font-family: Futura Round;
+  src: url(../fonts/Futura\ Round.ttf);
+}
+
+div {
+  font-family: Futura Round;
 }
